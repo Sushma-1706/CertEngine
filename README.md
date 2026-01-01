@@ -70,11 +70,11 @@ CertEngine/
 ---
 
 ## 💡 Future Enhancements
-🚀 Add QR code verification
-📧 Email certificates automatically
-📄 Support multiple templates
-🎨 Live preview before generation
-🔐 Admin authentication
+- 🚀 Add QR code verification
+- 📧 Email certificates automatically
+- 📄 Support multiple templates
+- 🎨 Live preview before generation
+- 🔐 Admin authentication
 
 ---
 ## 🚀 How to Run Locally
