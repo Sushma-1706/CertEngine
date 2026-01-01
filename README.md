@@ -40,6 +40,7 @@ It allows users to upload participant data and certificate templates to generate
 
 ---
 ## 📂 Project Structure
+```bash
 CertEngine/
 │
 ├── app.py
@@ -60,18 +61,7 @@ CertEngine/
 │   └── output/
 │
 └── .venv/
-
----
-
-## 🚀 How to Run Locally
-
-```bash
-git clone https://github.com/your-username/CertEngine.git
-cd CertEngine
-pip install pytesseract
-pip install -r requirements.txt
-python app.py
-
+```
 ---
 
 ## 📸 Screenshots
@@ -86,6 +76,15 @@ python app.py
 🎨 Live preview before generation
 🔐 Admin authentication
 
+---
+## 🚀 How to Run Locally
+```bash
+git clone https://github.com/your-username/CertEngine.git
+cd CertEngine
+pip install pytesseract
+pip install -r requirements.txt
+python app.py
+```
 ---
 
 ## 🧑‍💻 Author
