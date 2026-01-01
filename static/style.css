@@ -1,0 +1,172 @@
+/* Import a modern font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #2563eb;
+    --primary-hover: #1d4ed8;
+    --bg-color: #f8fafc;
+    --card-bg: #ffffff;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-main);
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-main);
+}
+
+/* Custom File Input Styling */
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px dashed var(--border-color);
+    border-radius: 8px;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="file"]:hover {
+    border-color: var(--primary-color);
+}
+
+/* Grid layout for coordinates */
+.grid-inputs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+input[type="number"], input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input[type="number"]:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Submit Button */
+.btn-submit {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease;
+}
+
+.btn-submit:hover {
+    background-color: var(--primary-hover);
+}
+
+.btn-submit:active {
+    transform: scale(0.98);
+}
+
+/* Instruction Box */
+.instructions {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #eff6ff;
+    border-left: 4px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+.instructions p {
+    margin: 0 0 8px 0;
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--primary-color);
+}
+
+.instructions ol {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 12px;
+    color: #1e40af;
+    line-height: 1.6;
+}
+
+/* Loader Animation (Optional) */
+.loading-hidden {
+    display: none;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: var(--primary-color);
+}
+/* Logo Styling */
+.logo-container {
+    display: flex;
+    flex-direction: column; /* Stack logo and text vertically */
+    align-items: center;    /* Center them horizontally */
+    gap: 0px;               /* Force zero gap between flex items */
+    margin-bottom: 20px;    /* Space between this whole section and the form */
+}
+
+.logo {
+    width: 300px;           /* Adjust size as needed */
+    height: auto;
+    display: block;
+    margin-bottom: -10px;   /* Pulls the text up even closer */
+}
